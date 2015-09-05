@@ -12,7 +12,7 @@
 # limitations under the License.
 
 application: toybox-mygo
-version: test-1
+version: test-2
 runtime: go
 api_version: go1
 
@@ -23,6 +23,10 @@ handlers:
 - url: /favicon.ico
   static_files: static/favicon.ico
   upload: static/favicon.ico
+
+- url: /play
+  static_files: static/play.html
+  upload: static/play.html
 
 - url: /
   static_files: static/index.html
